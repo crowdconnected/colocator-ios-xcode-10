@@ -284,6 +284,15 @@ SWIFT_CLASS("_TtC10CCLocation18CCRequestMessaging")
 
 
 
+@class NSString;
+@class NSURL;
+
+SWIFT_CLASS("_TtC10CCLocation8CCSocket")
+@interface CCSocket : NSObject
+- (NSURL * _Nonnull)socketURLWithUrl:(NSString * _Nonnull)url id:(NSString * _Nonnull)id SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
 #if __has_attribute(external_source_symbol)
 # pragma clang attribute pop
 #endif

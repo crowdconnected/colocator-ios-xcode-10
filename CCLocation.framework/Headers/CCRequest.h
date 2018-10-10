@@ -14,6 +14,7 @@
 @protocol CCRequestDelegate;
 @class CCRequestMessaging;
 @class CCLocationManager;
+@class CCSocket;
 
 @interface CCRequest : NSObject
 
@@ -48,6 +49,7 @@
 - (NSDate*)getStartTimeSwiftBridge;
 - (NSTimeInterval) timeIntervalSinceBoot;
 - (void) fetchTrueTime;
+- (BOOL) getIsFetchingTrueTime;
 @end
 
 #pragma mark - CCRequestDelegate
